@@ -1,0 +1,203 @@
+.heading {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+  letter-spacing: -0.01em;
+}
+
+/* Education cards */
+.eduList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.eduCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-card);
+  transition: border-color 0.2s;
+}
+
+.eduCard:hover {
+  border-color: var(--border-hover);
+}
+
+.eduLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.degree {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.institution {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.eduRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.currentBadge {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  padding: 2px 8px;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.period {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.gpa {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Sub sections */
+.subSection {
+  margin-bottom: 40px;
+}
+
+.subHeading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+/* Certifications */
+.certList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-card);
+  transition: border-color 0.2s;
+}
+
+.certCard:hover {
+  border-color: var(--border-hover);
+}
+
+.certLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.certTitle {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.certIssuer {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.certDate {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* Achievements */
+.achieveList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.achieveCard {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s;
+}
+
+.achieveCard:hover {
+  border-color: var(--border-hover);
+}
+
+.achieveHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.achieveTitle {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.achieveDate {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.achieveDetail {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 520px) {
+  .eduCard {
+    flex-direction: column;
+  }
+  .eduRight {
+    align-items: flex-start;
+  }
+  .certCard {
+    flex-direction: column;
+  }
+}
